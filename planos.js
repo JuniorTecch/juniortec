@@ -1,5 +1,3 @@
-// scripts.js
-
 document.addEventListener('DOMContentLoaded', function() {
     const btnDetalhes = document.querySelectorAll('.btn-detalhes');
 
@@ -8,7 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const target = this.getAttribute('data-target');
             const detalhes = document.getElementById(target);
 
-            detalhes.classList.toggle('active');
+            if (detalhes.style.display === 'block') {
+                detalhes.style.display = 'none';
+            } else {
+                detalhes.style.display = 'block';
+            }
         });
     });
 });
