@@ -1,0 +1,63 @@
+/* Estilos específicos para a página de cursos */
+
+.curso {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.curso h2 {
+    margin-bottom: 10px;
+}
+
+.curso p {
+    margin-bottom: 20px;
+}
+
+.btn-detalhes {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.curso-detalhes {
+    display: none;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.curso-detalhes p {
+    margin-bottom: 10px;
+}
+
+.cta {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Estilos específicos para animações */
+
+.curso-detalhes.active {
+    display: block;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

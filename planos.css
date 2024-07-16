@@ -1,0 +1,189 @@
+/* Estilos refinados para a página de Planos de Suporte */
+
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav {
+    display: block;
+    background-color: #004080;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #25D366;
+}
+/* Estilos para a seção de Herói */
+.hero {
+    background: linear-gradient(to right, #004080, #002040), url('hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.hero .cta {
+    background-color: #ffd700;
+    color: #004080;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    font-size: 1.2em;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero .cta:hover {
+    background-color: #ffcc00; /* Amarelo mais claro ao passar o mouse */
+}
+/* Estilos refinados para a página de Planos de Suporte */
+
+/* ... Estilos gerais e outros estilos existentes ... */
+
+/* Estilos para a seção de Planos */
+.planos {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.plano {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.plano:hover {
+    transform: translateY(-10px); /* Efeito de levantar ao passar o mouse */
+}
+
+.plano h3 {
+    color: #004080;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.plano p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.btn-detalhes {
+    background-color: #004080;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+.btn-detalhes:hover {
+    background-color: #002040; /* Tom mais escuro ao passar o mouse */
+}
+
+.plano-detalhes {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    z-index: 100;
+}
+
+.plano-detalhes.active {
+    display: block;
+    opacity: 1;
+}
+
+.plano-detalhes p {
+    color: #333;
+    font-size: 1em;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    clear: both;
+    position: relative;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
